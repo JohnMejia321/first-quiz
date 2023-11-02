@@ -35,15 +35,12 @@ class MagicalOven:
         self.ingredients.append(item)
 
     def freeze(self):
-        # Tu lógica para congelar los ingredientes
         self.output = "snow"
 
     def boil(self):
-        # Tu lógica para hervir los ingredientes
         self.output = "gold"
 
     def wait(self):
-        # Tu lógica para combinar ingredientes sin cambio de temperatura
         self.output = "pizza"
 
     def get_output(self):
@@ -58,7 +55,7 @@ def alchemy_combine(oven, ingredients, temperature):
 
     if temperature < 0:
         oven.freeze()
-    elif temperature >= 100:
+    elif temperature > 150:
         oven.boil()
     else:
         oven.wait()
