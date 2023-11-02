@@ -17,6 +17,7 @@ TABLE_SCHEMA = """
       owner_id integer not null,
       pet_id integer not null
     );
+    
 """
 
 ANIMALS = [
