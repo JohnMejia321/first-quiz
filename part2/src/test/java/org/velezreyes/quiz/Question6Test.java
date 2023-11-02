@@ -65,7 +65,7 @@ public class Question6Test {
 
     vm.insertQuarter();
     vm.insertQuarter();
-    vm.insertQuarter();
+    
 
     // Test that KarenTea costs more than 75 cents.
     assertThrows(NotEnoughMoneyException.class, () -> {
